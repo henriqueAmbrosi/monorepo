@@ -8,9 +8,9 @@
   },
   "scripts": {
     "clean:core": "yarn workspace @namespace/core clean",
-    "build:core": "yarn workspace @namespace/core  build",
-    "build:one": " yarn build:core && yarn workspace @namespace/app-one build",
-    "build:two": " yarn build:core && yarn workspace @namespace/app-two build",
+    "build:core": "yarn workspace @namespace/core  craco builds",
+    "build:one": " yarn build:core && yarn workspace @namespace/app-one craco build",
+    "build:two": " yarn build:core && yarn workspace @namespace/app-two craco build",
     "test:core": "yarn workspace @namespace/app-core test",
     "test:one": "yarn workspace @namespace/app-one test",
     "test:two": "yarn workspace @namespace/app-two test",
