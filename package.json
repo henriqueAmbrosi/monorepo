@@ -8,7 +8,7 @@
   },
   "scripts": {
     "clean:core": "yarn workspace @namespace/core clean",
-    "build:core": "yarn workspace @namespace/core  craco builds",
+    "build:core": "yarn workspace @namespace/core  craco build",
     "build:one": " yarn build:core && yarn workspace @namespace/app-one craco build",
     "build:two": " yarn build:core && yarn workspace @namespace/app-two craco build",
     "test:core": "yarn workspace @namespace/app-core test",
