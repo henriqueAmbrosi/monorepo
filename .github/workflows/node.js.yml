@@ -17,10 +17,7 @@ jobs:
           cmd: build:one # will run `yarn build` command
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: test:one # will run `yarn test` command
-          - uses: borales/actions-yarn@v2.0.0
-        with:
           cmd: build:two # will run `yarn build` command
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: test:two # will run `yarn test` command
+          cmd: test # will run `yarn test` command
