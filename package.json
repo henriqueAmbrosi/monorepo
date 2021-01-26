@@ -8,9 +8,9 @@
   },
   "scripts": {
     "clean:core": "yarn workspace @namespace/core clean",
-    "build:core": " yarn workspace @namespace/core  build",
-    "build:one": " yarn build:core && yarn workspace @namespace/app-one build",
-    "build:two": "yarn build:core && yarn workspace @namespace/app-two build",
+    "build:core": "yarn workspace @namespace/core  build",
+    "build:one": "CI=false yarn build:core && CI=false yarn workspace @namespace/app-one build",
+    "build:two": "CI=false yarn build:core && CI=false yarn workspace @namespace/app-two build",
     "test:core": "yarn workspace @namespace/app-core test",
     "test:one": "yarn workspace @namespace/app-one test",
     "test:two": "yarn workspace @namespace/app-two test",
