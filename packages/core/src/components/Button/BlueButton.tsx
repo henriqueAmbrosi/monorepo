@@ -5,7 +5,7 @@ export interface BlueButtonProps {
 export function BlueButton(props: BlueButtonProps): JSX.Element {
   return (
     <button data-testid="core-button" style={{ backgroundColor: 'blue', color: 'white' }}>
-      {props.label}
+      {props.label} teste
     </button>
   );
 }
